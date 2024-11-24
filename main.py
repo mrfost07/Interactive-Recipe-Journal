@@ -9,27 +9,6 @@ import json
 st.set_page_config(page_title="Interactive Recipe Journal", layout="wide")
 st.title("🍽️ **Recipe Journal with Nutritional Tracking**")
 
-# Set custom colors and layout design
-st.markdown("""
-    <style>
-        .stApp {
-            background-color: #f0f8ff;
-        }
-        .sidebar .sidebar-content {
-            background-color: #cce7ff;
-            color: #333;
-        }
-        .stButton>button {
-            color: #fff;
-            background-color: #007acc;
-            border-radius: 8px;
-        }
-        h1, h2, h3, h4, h5 {
-            color: #007acc;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
 # Connect to SQLite database
 conn = sqlite3.connect("recipe_journal.db")
 c = conn.cursor()
