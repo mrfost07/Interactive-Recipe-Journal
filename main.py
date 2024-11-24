@@ -7,7 +7,7 @@ import json
 
 # Streamlit page configuration
 st.set_page_config(page_title="Interactive Recipe Journal", layout="wide")
-st.title("🍽️ **Recipe Journal with Nutritional Tracking**")
+st.markdown("<h1 style='color: blue;'>🍽️ <b>Recipe Journal with Nutritional Tracking</b></h1>", unsafe_allow_html=True)
 
 # Connect to SQLite database
 conn = sqlite3.connect("recipe_journal.db")
